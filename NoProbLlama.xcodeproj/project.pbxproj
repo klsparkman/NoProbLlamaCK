@@ -12,6 +12,8 @@
 		3517A1D82649D700009DA443 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3517A1D62649D700009DA443 /* Main.storyboard */; };
 		3517A1DA2649D705009DA443 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3517A1D92649D705009DA443 /* Assets.xcassets */; };
 		3517A1DD2649D705009DA443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3517A1DB2649D705009DA443 /* LaunchScreen.storyboard */; };
+		3517A1ED2649D870009DA443 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517A1EC2649D870009DA443 /* CloudKit.framework */; };
+		3517A1F12649DBE4009DA443 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517A1F02649DBE4009DA443 /* Topic.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +24,9 @@
 		3517A1D92649D705009DA443 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3517A1DC2649D705009DA443 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3517A1DE2649D705009DA443 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3517A1EA2649D86A009DA443 /* NoProbLlama.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoProbLlama.entitlements; sourceTree = "<group>"; };
+		3517A1EC2649D870009DA443 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+		3517A1F02649DBE4009DA443 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +34,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3517A1ED2649D870009DA443 /* CloudKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,7 @@
 			children = (
 				3517A1CF2649D700009DA443 /* NoProbLlama */,
 				3517A1CE2649D700009DA443 /* Products */,
+				3517A1EB2649D870009DA443 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +61,7 @@
 		3517A1CF2649D700009DA443 /* NoProbLlama */ = {
 			isa = PBXGroup;
 			children = (
+				3517A1EA2649D86A009DA443 /* NoProbLlama.entitlements */,
 				3517A1E92649D7BE009DA443 /* Model */,
 				3517A1E82649D7BB009DA443 /* Views */,
 				3517A1E52649D7AD009DA443 /* Controllers */,
@@ -108,8 +116,17 @@
 		3517A1E92649D7BE009DA443 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				3517A1F02649DBE4009DA443 /* Topic.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		3517A1EB2649D870009DA443 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3517A1EC2649D870009DA443 /* CloudKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -183,6 +200,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3517A1D12649D700009DA443 /* AppDelegate.swift in Sources */,
+				3517A1F12649DBE4009DA443 /* Topic.swift in Sources */,
 				3517A1D32649D700009DA443 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -330,9 +348,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NoProbLlama/NoProbLlama.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97JSCUVT38;
-				INFOPLIST_FILE = NoProbLlama/Info.plist;
+				INFOPLIST_FILE = NoProbLlama/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -349,9 +368,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = NoProbLlama/NoProbLlama.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 97JSCUVT38;
-				INFOPLIST_FILE = NoProbLlama/Info.plist;
+				INFOPLIST_FILE = NoProbLlama/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
