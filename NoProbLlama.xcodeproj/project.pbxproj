@@ -14,6 +14,10 @@
 		3517A1DD2649D705009DA443 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3517A1DB2649D705009DA443 /* LaunchScreen.storyboard */; };
 		3517A1ED2649D870009DA443 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3517A1EC2649D870009DA443 /* CloudKit.framework */; };
 		3517A1F12649DBE4009DA443 /* Topic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517A1F02649DBE4009DA443 /* Topic.swift */; };
+		3517A1F32649E0F1009DA443 /* TopicController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517A1F22649E0F1009DA443 /* TopicController.swift */; };
+		3517A1F62649E1D6009DA443 /* TopicError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517A1F52649E1D6009DA443 /* TopicError.swift */; };
+		3517A1F82649F1E3009DA443 /* TopicsListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517A1F72649F1E3009DA443 /* TopicsListTableViewController.swift */; };
+		3517A1FA2649F1F1009DA443 /* TopicDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3517A1F92649F1F1009DA443 /* TopicDetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		3517A1EA2649D86A009DA443 /* NoProbLlama.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = NoProbLlama.entitlements; sourceTree = "<group>"; };
 		3517A1EC2649D870009DA443 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3517A1F02649DBE4009DA443 /* Topic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Topic.swift; sourceTree = "<group>"; };
+		3517A1F22649E0F1009DA443 /* TopicController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicController.swift; sourceTree = "<group>"; };
+		3517A1F52649E1D6009DA443 /* TopicError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicError.swift; sourceTree = "<group>"; };
+		3517A1F72649F1E3009DA443 /* TopicsListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicsListTableViewController.swift; sourceTree = "<group>"; };
+		3517A1F92649F1F1009DA443 /* TopicDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopicDetailViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				3517A1EA2649D86A009DA443 /* NoProbLlama.entitlements */,
+				3517A1F42649E1CA009DA443 /* Helpers */,
 				3517A1E92649D7BE009DA443 /* Model */,
 				3517A1E82649D7BB009DA443 /* Views */,
 				3517A1E52649D7AD009DA443 /* Controllers */,
@@ -94,6 +103,8 @@
 		3517A1E62649D7B1009DA443 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3517A1F72649F1E3009DA443 /* TopicsListTableViewController.swift */,
+				3517A1F92649F1F1009DA443 /* TopicDetailViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -101,6 +112,7 @@
 		3517A1E72649D7B6009DA443 /* ModelControllers */ = {
 			isa = PBXGroup;
 			children = (
+				3517A1F22649E0F1009DA443 /* TopicController.swift */,
 			);
 			path = ModelControllers;
 			sourceTree = "<group>";
@@ -127,6 +139,14 @@
 				3517A1EC2649D870009DA443 /* CloudKit.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3517A1F42649E1CA009DA443 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				3517A1F52649E1D6009DA443 /* TopicError.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -201,7 +221,11 @@
 			files = (
 				3517A1D12649D700009DA443 /* AppDelegate.swift in Sources */,
 				3517A1F12649DBE4009DA443 /* Topic.swift in Sources */,
+				3517A1F62649E1D6009DA443 /* TopicError.swift in Sources */,
+				3517A1FA2649F1F1009DA443 /* TopicDetailViewController.swift in Sources */,
+				3517A1F82649F1E3009DA443 /* TopicsListTableViewController.swift in Sources */,
 				3517A1D32649D700009DA443 /* SceneDelegate.swift in Sources */,
+				3517A1F32649E0F1009DA443 /* TopicController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
